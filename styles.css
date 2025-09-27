@@ -313,8 +313,8 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    color: var(--primary-blue);
+    font-size: 0.8rem;
+    color: var(--primary-blue) !important;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
@@ -378,6 +378,14 @@ body {
 .features {
     padding: 100px 0;
     background: var(--white);
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--text-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .features-grid {
@@ -759,7 +767,7 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.7rem;
     }
 
     .floating-icons {
@@ -809,7 +817,7 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
 
     .hero-description {
