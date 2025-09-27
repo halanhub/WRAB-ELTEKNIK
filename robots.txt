@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://wrab.netlify.app/sitemap.xml
+Sitemap: https://wrab-el.se/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
