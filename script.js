@@ -244,36 +244,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function initImageLoading() {
     const images = document.querySelectorAll('img[loading="lazy"]');
     
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.addEventListener('load', () => {
-                        img.classList.add('loaded');
-                    });
-                    img.addEventListener('error', () => {
-                        img.classList.add('loaded');
-                        img.style.background = '#f0f0f0';
-                    });
-                    observer.unobserve(img);
-                }
-            });
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
         });
-
-        images.forEach(img => imageObserver.observe(img));
-    } else {
-        // Fallback for browsers without IntersectionObserver
-        images.forEach(img => {
-            img.addEventListener('load', () => {
-                img.classList.add('loaded');
-            });
-            img.addEventListener('error', () => {
-                img.classList.add('loaded');
-                img.style.background = '#f0f0f0';
-            });
+        img.addEventListener('error', () => {
+            img.classList.add('loaded');
+            img.style.background = '#f0f0f0';
         });
-    }
+    });
 }
 
 // Initialize image loading when DOM is ready
