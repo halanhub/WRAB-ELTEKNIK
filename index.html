@@ -406,6 +406,24 @@
         </div>
     </footer>
 
+    <!-- Hidden form for Netlify form detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <select name="service">
+            <option value="privat">Privatperson</option>
+            <option value="foretag">Företag</option>
+            <option value="industri">Industri</option>
+            <option value="elbil">Elbilsladdare</option>
+            <option value="solceller">Solceller</option>
+            <option value="jour">Jour/Akutservice</option>
+            <option value="annat">Annat</option>
+        </select>
+        <textarea name="message"></textarea>
+        <input type="file" name="files" multiple />
+    </form>
+
     <script src="script.js"></script>
 </body>
 </html>
