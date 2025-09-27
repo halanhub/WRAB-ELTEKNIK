@@ -16,6 +16,12 @@
     <meta name="ICBM" content="56.8777, 14.8091">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="images/logo/WR-LOGO-NOBG.png">
+    <link rel="preload" as="image" href="images/logo/hero/electric-1080585_1280.jpg">
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -225,9 +231,9 @@
             </div>
             
             <div class="hero-content">
-                <div class="hero-image">
-                    <img src="images/logo/hero/electric-1080585_1280.jpg" alt="Elinstallation" class="hero-main-image">
-                </div>
+            <div class="hero-image">
+                <img src="images/logo/hero/electric-1080585_1280.jpg" alt="Elinstallation" class="hero-main-image" loading="eager">
+            </div>
                 <h1 class="hero-subtitle">Professionell elektriker i Växjö och Småland</h1>
                 <p class="hero-description">
                     WRAB Elteknik erbjuder professionella elinstallationer för industrier, företag och privatpersoner i Växjö och Småland. 
