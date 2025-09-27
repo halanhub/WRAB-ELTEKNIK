@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://wrab-el.se/sitemap.xml
+Sitemap: https://www.wrab-el.se/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
