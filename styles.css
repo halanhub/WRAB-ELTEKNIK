@@ -196,7 +196,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 90px;
 }
 
 .hero-container {
@@ -304,7 +304,7 @@ body {
 .hero-image {
     margin-bottom: 2rem;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .hero-main-image {
@@ -327,6 +327,7 @@ body {
     font-size: 0.8rem;
     color: var(--primary-blue) !important;
     font-weight: 600;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -341,6 +342,8 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .btn {
@@ -842,6 +845,7 @@ img {
 
     .hero-buttons {
         justify-content: center;
+        align-items: center;
     }
 
     .btn {
