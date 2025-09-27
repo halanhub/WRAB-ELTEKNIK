@@ -104,6 +104,17 @@ body {
     text-decoration: none;
 }
 
+/* Footer phone number - no styling */
+.footer-section p a {
+    color: var(--text-light) !important;
+    text-decoration: none !important;
+}
+
+.footer-section p a:hover {
+    color: var(--text-light) !important;
+    text-decoration: none !important;
+}
+
 /* Phone number in services page button */
 .btn a {
     color: inherit;
