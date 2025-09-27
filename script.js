@@ -232,17 +232,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Parallax effect for floating icons
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const icons = document.querySelectorAll('.floating-icons .icon');
-        
-        icons.forEach((icon, index) => {
-            const speed = 0.5 + (index * 0.1);
-            const yPos = -(scrolled * speed);
-            icon.style.transform = `translateY(${yPos}px)`;
-        });
-    });
 
 
     // Add loading animation
