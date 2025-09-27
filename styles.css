@@ -313,7 +313,7 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-blue);
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -759,7 +759,7 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .floating-icons {
@@ -809,7 +809,7 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .hero-description {
