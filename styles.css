@@ -360,8 +360,10 @@ body {
     max-width: 500px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2));
+    filter: none;
     pointer-events: none;
+    background: transparent;
+    mix-blend-mode: normal;
 }
 
 .btn {
