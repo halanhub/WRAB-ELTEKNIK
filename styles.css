@@ -721,7 +721,7 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0;
     transition: all 0.3s ease;
     background: none;
     will-change: opacity, transform;
@@ -766,6 +766,7 @@ img {
     height: 250px;
     object-fit: cover;
     background: none;
+    border-radius: 0;
     display: block;
 }
 
@@ -856,7 +857,7 @@ img {
         height: 250px;
     }
 
-    /* On mobile keep images filling cards (cover) to match rounded card edges */
+    /* On mobile keep images filling cards (cover) */
     .gallery-item img,
     .gallery-image {
         height: 250px;
