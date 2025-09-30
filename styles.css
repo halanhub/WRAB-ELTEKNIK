@@ -313,6 +313,8 @@ body {
 /* Hero Content */
 .hero-content {
     text-align: left;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -321,6 +323,8 @@ body {
     color: var(--primary-blue);
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    max-width: 100%;
+    text-wrap: balance;
 }
 
 .hero-description {
@@ -328,7 +332,10 @@ body {
     color: var(--text-light);
     margin-bottom: 2.5rem;
     line-height: 1.7;
-    max-width: 30ch;
+    max-width: 36ch;
+    text-align: left;
+    text-align-last: auto;
+    hyphens: manual;
 }
 
 .hero-buttons {
@@ -826,6 +833,8 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 380px;
+        margin: 0 auto;
     }
 
     .hero-image-container {
@@ -838,6 +847,8 @@ img {
     .hero-title {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+        max-width: 100%;
+        text-wrap: balance;
     }
 
     .hero-description {
@@ -847,6 +858,10 @@ img {
         max-width: 28ch;
         margin-left: auto;
         margin-right: auto;
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: center;
+        hyphens: auto;
     }
 
     .hero-car {
@@ -926,12 +941,15 @@ img {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        max-width: 340px;
     }
 
     .hero-title {
         font-size: 1.75rem;
         font-weight: 700;
         margin-bottom: 0.75rem;
+        max-width: 100%;
+        text-wrap: balance;
     }
 
     .hero-description {
@@ -941,6 +959,10 @@ img {
         max-width: 24ch;
         margin-left: auto;
         margin-right: auto;
+        text-align: justify;
+        text-justify: inter-word;
+        text-align-last: center;
+        hyphens: auto;
     }
 
     .hero-car {
