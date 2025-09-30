@@ -214,6 +214,7 @@ body {
 .floating-icons {
     position: relative;
     height: 500px;
+    z-index: 1;
 }
 
 .icon {
@@ -305,14 +306,17 @@ body {
     margin-bottom: 2rem;
     width: 100%;
     max-width: 500px;
+    position: relative;
+    z-index: 3;
 }
 
 .hero-main-image {
     width: 100%;
     height: 300px;
-    border-radius: 15px;
-    object-fit: cover;
+    border-radius: 0;
+    object-fit: contain;
     box-shadow: var(--shadow);
+    background: transparent;
 }
 
 .hero-content h1 {
