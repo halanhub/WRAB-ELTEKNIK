@@ -31,7 +31,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background: var(--white);
+    background: var(--white) !important;
     box-shadow: var(--shadow);
     position: fixed;
     top: 0;
@@ -721,7 +721,7 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
     transition: all 0.3s ease;
     background: none;
     will-change: opacity, transform;
@@ -766,7 +766,7 @@ img {
     height: 250px;
     object-fit: cover;
     background: none;
-    border-radius: 0;
+    border-radius: 15px 15px 0 0;
     display: block;
 }
 
