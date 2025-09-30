@@ -215,11 +215,11 @@ body {
     pointer-events: none;
 }
 
-.icon {
+    .icon {
     position: absolute;
     animation: float 6s ease-in-out infinite;
-    opacity: 0.25;
-    filter: blur(0.5px) drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+    opacity: 0.3;
+    filter: blur(0.3px) drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .icon-1 {
@@ -823,8 +823,8 @@ img {
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
-        padding-top: 1rem;
+        gap: 1.5rem;
+        padding-top: 0.5rem;
     }
     
     .hero-content {
@@ -865,8 +865,8 @@ img {
     }
 
     .hero-car {
-        max-width: 460px;
-        width: 115%;
+        max-width: 480px;
+        width: 120%;
         height: auto;
     }
 
