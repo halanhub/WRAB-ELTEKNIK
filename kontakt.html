@@ -31,8 +31,10 @@
     <meta name="twitter:description" content="Kontakta WRAB Elteknik för en kostnadsfri offert på elinstallationer. Ring 0733768058 eller skicka meddelande via formuläret.">
     <meta name="twitter:image" content="https://www.wrab-el.se/images/logo/WR-LOGO-NOBG-optimized.png">
     
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +45,10 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="index.html">
-                    <img src="images/logo/WR-LOGO-NOBG-optimized.png" alt="WRAB Elteknik Logo" class="logo-img">
+                    <picture>
+                        <source srcset="images/logo/WR-LOGO-NOBG-optimized-small.png" type="image/png">
+                        <img src="images/logo/WR-LOGO-NOBG-optimized-small.png" alt="WRAB Elteknik Logo" class="logo-img" width="113" height="75">
+                    </picture>
                 </a>
             </div>
             <ul class="nav-menu">
