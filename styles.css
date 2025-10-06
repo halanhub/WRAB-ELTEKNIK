@@ -59,7 +59,7 @@ h1:not(.hero-title) {
     top: 0;
     width: 100%;
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: none;
 }
 
 .nav-container {
@@ -69,7 +69,7 @@ h1:not(.hero-title) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 70px;
 }
 
 .nav-logo {
@@ -83,6 +83,12 @@ h1:not(.hero-title) {
     width: auto;
     border-radius: 8px;
     object-fit: contain;
+    transition: none !important;
+}
+
+/* Prevent inline image baseline shift inside navbar */
+.nav-logo img {
+    display: block;
 }
 
 .nav-logo h2 {
@@ -223,7 +229,7 @@ h1:not(.hero-title) {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 /* Floating Icons Background */
@@ -827,7 +833,7 @@ img {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 60px;
+        top: 70px;
         flex-direction: column;
         background-color: var(--white);
         width: 100%;
